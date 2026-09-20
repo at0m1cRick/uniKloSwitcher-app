@@ -371,5 +371,36 @@
                 length="2072770"
                 type="application/octet-stream" />
         </item>
+        <item>
+            <title>UniKloSwitcher 1.5.2</title>
+            <sparkle:version>1.5.2</sparkle:version>
+            <sparkle:shortVersionString>1.5.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <pubDate>Sun, 20 Sep 2026 22:46:17 +0000</pubDate>
+            <description><![CDATA[<h4>Added</h4>
+<ul>
+<li>Secure Input Protection &amp; HUD Notice**: Complete isolation of password and terminal `sudo` sessions via `IsSecureEventInputEnabled()` and IOKit process resolution (`kCGSSessionSecureInputPID`). Auto-switching and hotkey conversions immediately bail without touching password fields, and an unobtrusive, click-through non-activating HUD overlay informs the user.</li>
+<li>Bilingual Localization (EN / RU)**: Automatic system language detection (`Locale.current`) with manual language override in Settings (`System / English / Русский`). Full 100% localization across HUD notices, menu bar items, tooltips, and all 4 Settings tabs (`General`, `Auto-Switch`, `Hotkeys`, `About`).</li>
+<li>Extended Pause Options**: Added «Until Tomorrow» (`pauseUntilTomorrow`) and clarified pause durations in the menu bar (`15 Minutes`, `30 Minutes`, `1 Hour`, `Until Tomorrow`).</li>
+<li>HUD Preview Button**: Interactive test button in Settings → General to preview the Secure Input notice layout and typography directly on screen.</li>
+</ul>
+<h4>Changed</h4>
+<ul>
+<li>Secure Input HUD Typography &amp; Layout**: Compact, focused HUD linked directly to macOS system typography (`NSFont.systemFontSize`), featuring a security shield icon, concise scannable copy, and a non-activating `.statusBar` floating window level.</li>
+</ul>
+<h4>Fixed</h4>
+<ul>
+<li>Asymmetric Fail-Closed Secure Input Cache**: Cached `true` for 100ms during active password typing to eliminate WindowServer IPC overhead, while never caching `false` (0ms lag when entering password fields).</li>
+<li>Third-Party &amp; Alternative Layouts**: Unified layout support under a single core predicate `isLayoutSupported` shared by both auto-switch and manual hotkeys, fully supporting 3rd-party Cyrillic layouts lacking TIS language tags (e.g. Ilya Birman Typography).</li>
+<li>Clean UI Layout Codes (`displayLanguageCode`)**: Introduced robust 2-letter uppercase display code resolution for menu bar badges and floating language chips, permanently eliminating `?→?` notices on layouts with missing TIS language tags.</li>
+<li>AX Messaging Timeout**: Applied strict 0.25s timeouts on accessibility queries to prevent beachballs when interacting with unresponsive applications.</li>
+<li>Language Detection Fallback**: Aligned system language resolution so non-Russian system locales fall back cleanly to English standard interface, with reactive Settings window title updates upon language change.</li>
+</ul>]]></description>
+            <enclosure
+                url="https://github.com/at0m1cRick/uniKloSwitcher-app/releases/download/v1.5.2/UniKloSwitcher-1.5.2.zip"
+                sparkle:edSignature="/yG5EeOY1G+xgFhJr1kQCJ1FPMpqGqmwWizxcOHGNUlfuFX256waP7vRVRzDHf2Vo1a7/S9r4rZoSe7fK5jACw=="
+                length="2094484"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
