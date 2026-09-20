@@ -269,5 +269,27 @@
                 length="2041093"
                 type="application/octet-stream" />
         </item>
+        <item>
+            <title>UniKloSwitcher 1.4.3</title>
+            <sparkle:version>1.4.3</sparkle:version>
+            <sparkle:shortVersionString>1.4.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <pubDate>Sun, 20 Sep 2026 11:33:55 +0000</pubDate>
+            <description><![CDATA[<h4>Added</h4>
+<ul>
+<li>Native macOS menu bar layout badge indicator (`EN`, `RU`, etc.): filled plate with cutout text when active, outline plate when paused, disabled, or dormant on an unsupported layout; accent-color flash on layout switch. Configurable in Settings → General («Menu Bar Icon Style: Layout Badge / Keyboard»).</li>
+<li>Multi-layout safety gate (3+ layouts): auto-switch and hotkey word conversion strictly engage only when the active layout is English or Russian, leaving 3rd-party layouts (e.g. `de`, `uk`, `fr`) completely untouched.</li>
+</ul>
+<h4>Fixed</h4>
+<ul>
+<li>Calibrated trigram threshold (`minTargetScore = -3.8`) allowing tech terms and loanwords with rare Cyrillic trigrams (such as `,tql;` → `бейдж`) to auto-convert seamlessly.</li>
+<li>Menu bar layout badge proportions refined: narrower width and taller height matching native macOS capsule controls.</li>
+</ul>]]></description>
+            <enclosure
+                url="https://github.com/at0m1cRick/uniKloSwitcher-app/releases/download/v1.4.3/UniKloSwitcher-1.4.3.zip"
+                sparkle:edSignature="hSOeK0A9a4o2DOb01Ppvj9CAvkzK5mtwTAl7ybs75g6mOrVqtgoLnMqzMsi/DXnjKdZYq4Uz35FPKxcuEFKUBQ=="
+                length="2069283"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
