@@ -402,5 +402,24 @@
                 length="2094484"
                 type="application/octet-stream" />
         </item>
+        <item>
+            <title>UniKloSwitcher 1.5.3</title>
+            <sparkle:version>1.5.3</sparkle:version>
+            <sparkle:shortVersionString>1.5.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <pubDate>Mon, 21 Sep 2026 14:23:58 +0000</pubDate>
+            <description><![CDATA[<h4>Fixed</h4>
+<ul>
+<li>Slash as Word Boundary**: Added slash (`/`) as a recognized word boundary trigger in the auto-correction engine. Mistyped words followed immediately by a slash (e.g. `yfcnhjqrb/разработки`) now convert instantly at the slash (`настройки/`), switching the system layout to Russian for the subsequent word.</li>
+<li>Buffer &amp; Raw Keystroke Synchronization**: Synchronized raw keystroke tracking with destination word accumulation in `WordBuffer`, preventing raw buffer residue upon buffer resets (e.g. typing a slash or digits on an empty buffer). Fixes the bug where auto-correcting a word following a slash sent an extra Backspace that deleted the preceding slash (`настройкиразработки` → `настройки/разработки`).</li>
+<li>Accurate Deletion Range**: Eliminated double-counting of trailing punctuation in auto-correction backspace calculations, guaranteeing that only the typed characters belonging to the word and its trail are erased.</li>
+<li>Punctuation Key Preservation**: Refined `nextBufferChar` to preserve genuine punctuation keys (such as `/`) as typed when neither the source nor the destination mapping is an alphabetic letter.</li>
+</ul>]]></description>
+            <enclosure
+                url="https://github.com/at0m1cRick/uniKloSwitcher-app/releases/download/v1.5.3/UniKloSwitcher-1.5.3.zip"
+                sparkle:edSignature="CaJGgaNcAWNR9bz6Ey/VYt+IGR4LZ7iahu9jN8qUerOLjiDwZhETq47uRrQf8TD39d61j08swPbT1T4v/0gCBA=="
+                length="2096720"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
