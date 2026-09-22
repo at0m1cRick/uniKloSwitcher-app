@@ -454,5 +454,24 @@
                 length="2096941"
                 type="application/octet-stream" />
         </item>
+        <item>
+            <title>UniKloSwitcher 1.6.0</title>
+            <sparkle:version>1.6.0</sparkle:version>
+            <sparkle:shortVersionString>1.6.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <pubDate>Tue, 22 Sep 2026 22:17:04 +0000</pubDate>
+            <description><![CDATA[<h4>Fixed</h4>
+<ul>
+<li>Dynamic Winner &amp; Layout-Agnostic Punctuation Awareness**: Resolved conversion failures for words typed in the wrong layout ending in punctuation (such as `future.` typed on Russian layout producing `агегкую `). Introduced Path 2 (Dynamic Winner) in trigram decision scoring: when the target word has high naturalness ($s_{\text{alt}} \ge -2.85$) and the typed form is in the non-native zone ($s_{\text{typed}} &lt; -3.3$), the word converts dynamically with sensitivity-scaled margin. Dynamically detects punctuation intent across any installed Russian keyboard layout (Standard Mac, PC, Typewriter, Birman) without hardcoding characters by comparing destination punctuation against raw letters.</li>
+<li>Sparkle Appcast CI/CD Race Condition**: Fixed an issue where Sparkle update downloads failed with «_An error occurred while downloading the update. Please try again later_». In `.github/workflows/release.yml`, reordered steps so the GitHub Release with the binary `.zip` asset is published and verified _before_ pushing the updated `appcast.xml` to the public repository.</li>
+<li>Contextual Chaining &amp; Mutual Confirmation for Short Words**: Fixed an issue where phrases starting with multiple short words (such as `z nen` → `я тут` or `z nen поправил` → `я тут поправил`) were blocked from converting. Recognized 3-letter prepositions, particles, and adverbs in `ShortWords` (e.g. `тут`, `где`, `как`, `для`, `под`, `над`) are now properly classified as short-word candidates instead of being routed through the strict trigram garbage threshold. Consecutive recognized short words now mutually confirm the target language and convert immediately together, switching the system layout without requiring an extra long word.</li>
+<li>Symmetric Latin Short-Word Registry**: Expanded `ShortWords.latin` with common 3-letter words (`the`, `and`, `for`, `you`, `not`, etc.) to symmetrically guard against false-positive conversions on English typing and support reverse chaining from Cyrillic layout.</li>
+</ul>]]></description>
+            <enclosure
+                url="https://github.com/at0m1cRick/uniKloSwitcher-app/releases/download/v1.6.0/UniKloSwitcher-1.6.0.zip"
+                sparkle:edSignature="0+n5x49AJ1D8DTTg6fmg3z8sTK3AJg8bM2FVhBQsf+N0DefvQbqpW/1cttMkCLtNW547VJhXW+fshWUQRFaVDA=="
+                length="2098031"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
