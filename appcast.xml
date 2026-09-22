@@ -437,5 +437,22 @@
                 length="2096819"
                 type="application/octet-stream" />
         </item>
+        <item>
+            <title>UniKloSwitcher 1.5.5</title>
+            <sparkle:version>1.5.5</sparkle:version>
+            <sparkle:shortVersionString>1.5.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <pubDate>Tue, 22 Sep 2026 18:24:08 +0000</pubDate>
+            <description><![CDATA[<h4>Fixed</h4>
+<ul>
+<li>Contextual Chaining &amp; Mutual Confirmation for Short Words**: Fixed an issue where phrases starting with multiple short words (such as `z nen` → `я тут` or `z nen поправил` → `я тут поправил`) were blocked from converting. Recognized 3-letter prepositions, particles, and adverbs in `ShortWords` (e.g. `тут`, `где`, `как`, `для`, `под`, `над`) are now properly classified as short-word candidates instead of being routed through the strict trigram garbage threshold. Consecutive recognized short words now mutually confirm the target language and convert immediately together, switching the system layout without requiring an extra long word.</li>
+<li>Symmetric Latin Short-Word Registry**: Expanded `ShortWords.latin` with common 3-letter words (`the`, `and`, `for`, `you`, `not`, etc.) to symmetrically guard against false-positive conversions on English typing and support reverse chaining from Cyrillic layout.</li>
+</ul>]]></description>
+            <enclosure
+                url="https://github.com/at0m1cRick/uniKloSwitcher-app/releases/download/v1.5.5/UniKloSwitcher-1.5.5.zip"
+                sparkle:edSignature="1d5KIaNbcnrGQ6l657LD3cnbyK49So3GDBQ8CxuY38xlHYXd+hTkIcbGp2kusb7N8lPah2ETF/pd+UD0JjgFCA=="
+                length="2096941"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
