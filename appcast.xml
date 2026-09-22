@@ -421,5 +421,21 @@
                 length="2096720"
                 type="application/octet-stream" />
         </item>
+        <item>
+            <title>UniKloSwitcher 1.5.4</title>
+            <sparkle:version>1.5.4</sparkle:version>
+            <sparkle:shortVersionString>1.5.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <pubDate>Tue, 22 Sep 2026 13:35:44 +0000</pubDate>
+            <description><![CDATA[<h4>Fixed</h4>
+<ul>
+<li>Preposition &amp; Short-Word Chaining**: Fixed a regression where unanchored candidate short words (e.g. `nj` → `то`, `d` → `в`) were prematurely discarded from memory upon buffer reset instead of being preserved for contextual conversion with the following word (`nj есть` → `то есть`).</li>
+</ul>]]></description>
+            <enclosure
+                url="https://github.com/at0m1cRick/uniKloSwitcher-app/releases/download/v1.5.4/UniKloSwitcher-1.5.4.zip"
+                sparkle:edSignature="ntYModIQn4UwQj09IcP4f3yjHOeU38w7nkNBlZ5+XP4GZNGIvTl5W9Dqug47zkn+6g86mIaUDIRbx6belQJwBA=="
+                length="2096819"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
