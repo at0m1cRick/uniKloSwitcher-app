@@ -496,5 +496,25 @@
                 length="2097645"
                 type="application/octet-stream" />
         </item>
+        <item>
+            <title>UniKloSwitcher 1.6.2</title>
+            <sparkle:version>1.6.2</sparkle:version>
+            <sparkle:shortVersionString>1.6.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <pubDate>Wed, 07 Oct 2026 14:02:38 +0000</pubDate>
+            <description><![CDATA[<h4>Changed</h4>
+<ul>
+<li>Soft Tray Icon Border**: Added a theme-adaptive soft border to both menu bar icon styles. The active layout badge (EN / RU) now carries an inner frame — a 0.75 pt semi-transparent ring cut into the filled plate — and the paused/disabled outline plate stroke is softened from 85% to 60% opacity. Keyboard glyphs gain a soft silhouette halo (1.4 px, 35% alpha) built from a dilation of the glyph mask. Both borders live inside the template alpha mask, so macOS renders them dark on light and light on dark menu bars without per-appearance code; the accent-color switch blink covers them as before.</li>
+</ul>
+<h4>Fixed</h4>
+<ul>
+<li>Removed the deprecated `showsResizeIndicator` assignment in the Settings window controller (no-op since macOS 15), silencing a deprecation warning in release builds.</li>
+</ul>]]></description>
+            <enclosure
+                url="https://github.com/at0m1cRick/uniKloSwitcher-app/releases/download/v1.6.2/UniKloSwitcher-1.6.2.zip"
+                sparkle:edSignature="2wFTgYIz95ef5jiaAnyl09f1XK29F7oAg+hiXG95W/ol0X81d4KkSuDwUD0Tl7PVkutmLONXS85oE88gFB4/Aw=="
+                length="2099155"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
