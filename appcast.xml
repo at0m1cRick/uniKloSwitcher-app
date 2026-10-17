@@ -561,5 +561,20 @@
                 length="1858120"
                 type="application/octet-stream" />
         </item>
+        <item>
+            <title>UniKloSwitcher 1.6.4</title>
+            <sparkle:version>1.6.4</sparkle:version>
+            <sparkle:shortVersionString>1.6.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <pubDate>Sat, 17 Oct 2026 22:25:14 +0000</pubDate>
+            <description><![CDATA[<ul>
+<li>Pass release</li>
+</ul>]]></description>
+            <enclosure
+                url="https://github.com/at0m1cRick/uniKloSwitcher-app/releases/download/v1.6.4/UniKloSwitcher-1.6.4.zip"
+                sparkle:edSignature="N7zIky4pPotM6Y44FjsHwIcwtHJufzsHIZ3KSvGWQvizOyHYCCrI6WiwfwfuF6lAWRS1fECpo3/UQeZp8qzJDA=="
+                length="1858924"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
