@@ -524,35 +524,35 @@
             <pubDate>Sat, 17 Oct 2026 20:11:06 +0000</pubDate>
             <description><![CDATA[<h4>Added</h4>
 <ul>
-<li>Undo for Auto-Corrections**: Pressing the conversion hotkey within 1.5 s after an automatic correction restores the text as typed and the original layout, as long as nothing was typed or clicked since.</li>
-<li>Mid-Word Layout Switch in Auto Mode**: Words typed partly in each layout are repaired at the word boundary — `ghjсто` → `просто` (layout switched mid-word) and `приdtn` → `привет` (wrong layout picked mid-word). Intentional hyphenated mixes (`SQL-запрос`, `iPhone-ом`) are left alone.</li>
-<li>Input Monitoring Status**: Settings → General and the menu bar menu now show whether Input Monitoring is granted (without it macOS delivers no keystrokes) and open the right System Settings pane.</li>
+<li><b>Undo for Auto-Corrections</b>: Pressing the conversion hotkey within 1.5 s after an automatic correction restores the text as typed and the original layout, as long as nothing was typed or clicked since.</li>
+<li><b>Mid-Word Layout Switch in Auto Mode</b>: Words typed partly in each layout are repaired at the word boundary — <code>ghjсто</code> → <code>просто</code> (layout switched mid-word) and <code>приdtn</code> → <code>привет</code> (wrong layout picked mid-word). Intentional hyphenated mixes (<code>SQL-запрос</code>, <code>iPhone-ом</code>) are left alone.</li>
+<li><b>Input Monitoring Status</b>: Settings → General and the menu bar menu now show whether Input Monitoring is granted (without it macOS delivers no keystrokes) and open the right System Settings pane.</li>
 </ul>
 <h4>Changed</h4>
 <ul>
-<li>Switch Target Follows Your Layouts**: Auto-switching and the hotkey now switch to the layout of the other script you last typed in (ABC, U.S. International, Dvorak, Russian – PC…) instead of always ABC / Russian.</li>
-<li>Hotkey Word Conversion via Accessibility**: Without a selection, the word before the caret is selected and replaced directly through Accessibility — no synthetic ⌘⇧← keystrokes, no clipboard, and the rest of the line (formatting, links, mentions) is never rewritten.</li>
-<li>Option + Space Hotkey**: Registered as a system hot key, so the key press no longer types a no-break space over the text being converted.</li>
-<li>Electron Apps Stay Light**: Chromium/Electron accessibility trees (Slack, Discord, VS Code) are only woken for manual conversions, never by background auto-correction.</li>
-<li>Clipboard Managers**: Temporary paste text and the restored clipboard are marked transient, so they no longer appear in clipboard history; the clipboard is not touched at all when a copy attempt copied nothing.</li>
-<li>Minimum System Version**: Info.plist and the update feed now declare macOS 15.0, matching the binary.</li>
+<li><b>Switch Target Follows Your Layouts</b>: Auto-switching and the hotkey now switch to the layout of the other script you last typed in (ABC, U.S. International, Dvorak, Russian – PC…) instead of always ABC / Russian.</li>
+<li><b>Hotkey Word Conversion via Accessibility</b>: Without a selection, the word before the caret is selected and replaced directly through Accessibility — no synthetic ⌘⇧← keystrokes, no clipboard, and the rest of the line (formatting, links, mentions) is never rewritten.</li>
+<li><b>Option + Space Hotkey</b>: Registered as a system hot key, so the key press no longer types a no-break space over the text being converted.</li>
+<li><b>Electron Apps Stay Light</b>: Chromium/Electron accessibility trees (Slack, Discord, VS Code) are only woken for manual conversions, never by background auto-correction.</li>
+<li><b>Clipboard Managers</b>: Temporary paste text and the restored clipboard are marked transient, so they no longer appear in clipboard history; the clipboard is not touched at all when a copy attempt copied nothing.</li>
+<li><b>Minimum System Version</b>: Info.plist and the update feed now declare macOS 15.0, matching the binary.</li>
 </ul>
 <h4>Fixed</h4>
 <ul>
-<li>Shortcuts Corrupting Text**: ⌘/⌃ shortcuts (⌘Z, ⌘V, ⌘S…) were buffered as letters and could make a later correction delete neighbouring text; ⌘Tab, ⌃Tab, ⌘Space and ⌘/ after a mistyped word were swallowed and replaced by a literal Tab, space or slash. Shortcuts now reset the word buffer and are never word boundaries.</li>
-<li>Word / Line Deletion**: ⌥⌫ and ⌘⌫ shortened the buffer by a single character only; they now reset it.</li>
-<li>Tab Between Fields**: A pending short-word candidate no longer survives Tab, which could delete text in the next form field. The boundary key is now re-posted as the real key event (keeps Tab focus navigation working in browsers).</li>
-<li>Fast Typing During a Correction**: Keystrokes held back while a word is retyped are now replayed in the new layout and fed into the word buffer (previously they kept the old layout and the next word was evaluated from its middle); ordering is preserved, and a 1 s watchdog guarantees typing can never freeze if a correction hangs.</li>
-<li>Contractions Typed in the Wrong Layout**: `Шэь` / `вщтэе` now convert to `I&#x27;m` / `don&#x27;t` (the apostrophe no longer splits the word).</li>
-<li>Punctuation Hint on Aggressive Sensitivity**: The punctuation hint could make the Dynamic Winner margin stricter instead of looser.</li>
-<li>Hotkey Without Selection in VS Code / JetBrains**: ⌘C is no longer used when Accessibility reports an empty selection (these editors copy the whole line), which duplicated the line.</li>
-<li>Double Hotkey Press**: A second press during a running conversion no longer starts an interleaving second pipeline, and conversions never overlap an auto-correction.</li>
-<li>Launch at Login**: Errors are reported instead of silently leaving the toggle on; pending approval in Login Items is explained.</li>
-<li>Duplicate Permission Prompt** at first launch removed; layout-change notifications are published once per change.</li>
+<li><b>Shortcuts Corrupting Text</b>: ⌘/⌃ shortcuts (⌘Z, ⌘V, ⌘S…) were buffered as letters and could make a later correction delete neighbouring text; ⌘Tab, ⌃Tab, ⌘Space and ⌘/ after a mistyped word were swallowed and replaced by a literal Tab, space or slash. Shortcuts now reset the word buffer and are never word boundaries.</li>
+<li><b>Word / Line Deletion</b>: ⌥⌫ and ⌘⌫ shortened the buffer by a single character only; they now reset it.</li>
+<li><b>Tab Between Fields</b>: A pending short-word candidate no longer survives Tab, which could delete text in the next form field. The boundary key is now re-posted as the real key event (keeps Tab focus navigation working in browsers).</li>
+<li><b>Fast Typing During a Correction</b>: Keystrokes held back while a word is retyped are now replayed in the new layout and fed into the word buffer (previously they kept the old layout and the next word was evaluated from its middle); ordering is preserved, and a 1 s watchdog guarantees typing can never freeze if a correction hangs.</li>
+<li><b>Contractions Typed in the Wrong Layout</b>: <code>Шэь</code> / <code>вщтэе</code> now convert to <code>I'm</code> / <code>don't</code> (the apostrophe no longer splits the word).</li>
+<li><b>Punctuation Hint on Aggressive Sensitivity</b>: The punctuation hint could make the Dynamic Winner margin stricter instead of looser.</li>
+<li><b>Hotkey Without Selection in VS Code / JetBrains</b>: ⌘C is no longer used when Accessibility reports an empty selection (these editors copy the whole line), which duplicated the line.</li>
+<li><b>Double Hotkey Press</b>: A second press during a running conversion no longer starts an interleaving second pipeline, and conversions never overlap an auto-correction.</li>
+<li><b>Launch at Login</b>: Errors are reported instead of silently leaving the toggle on; pending approval in Login Items is explained.</li>
+<li><b>Duplicate Permission Prompt</b> at first launch removed; layout-change notifications are published once per change.</li>
 </ul>
 <h4>Security &amp; Release</h4>
 <ul>
-<li>Builds are signed by the certificate SHA-1 instead of its name, and `sign_release.sh` verifies the certificate leaf before publishing; scripts that generate a new certificate now require an explicit flag.</li>
+<li>Builds are signed by the certificate SHA-1 instead of its name, and <code>sign_release.sh</code> verifies the certificate leaf before publishing; scripts that generate a new certificate now require an explicit flag.</li>
 <li>The release workflow skips versions that are already published (unless forced), verifies the uploaded archive byte-for-byte before updating the appcast, refuses empty EdDSA signatures, and runs one release at a time.</li>
 </ul>]]></description>
             <enclosure
