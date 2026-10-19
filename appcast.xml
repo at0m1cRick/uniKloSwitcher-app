@@ -576,5 +576,21 @@
                 length="1858924"
                 type="application/octet-stream" />
         </item>
+        <item>
+            <title>UniKloSwitcher 1.6.5</title>
+            <sparkle:version>1.6.5</sparkle:version>
+            <sparkle:shortVersionString>1.6.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <pubDate>Mon, 19 Oct 2026 14:56:55 +0000</pubDate>
+            <description><![CDATA[<h4>Fixed</h4>
+<ul>
+<li><b>"UniKlo Paused" Notice While Typing Passwords</b>: Typing capital letters in a password field, <code>sudo</code> or a Terminal with Secure Keyboard Entry could be mistaken for a Double Shift / Option tap and pop up the secure input notice. Modifier-tap hotkeys are now ignored while Secure Input is active (macOS hides the typed letters from the app there); Option + Space still shows the notice.</li>
+</ul>]]></description>
+            <enclosure
+                url="https://github.com/at0m1cRick/uniKloSwitcher-app/releases/download/v1.6.5/UniKloSwitcher-1.6.5.zip"
+                sparkle:edSignature="UUSepvbj27lumj0Qi+euU9onT6xOc5edGbU3Ee3B/Mi0PJET5czKTNuiX9K308tiv3oAT9WGPO+Rz5qtB4D5BQ=="
+                length="1859196"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
