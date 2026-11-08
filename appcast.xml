@@ -608,5 +608,21 @@
                 length="1861269"
                 type="application/octet-stream" />
         </item>
+        <item>
+            <title>UniKloSwitcher 1.6.7</title>
+            <sparkle:version>1.6.7</sparkle:version>
+            <sparkle:shortVersionString>1.6.7</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <pubDate>Sun, 08 Nov 2026 13:05:49 +0000</pubDate>
+            <description><![CDATA[<h4>Fixed</h4>
+<ul>
+<li><b>Stuck Tooltip Near the Menu Bar</b>: The hover tooltip on the tray icon ("UniKloSwitcher [EN] (Active)") could stay frozen on screen after an auto-switch: rewriting the tooltip while it was visible orphaned its window, and it disappeared only on the next layout change. The tooltip is removed entirely — the tray badge (filled vs outline plate) and the click menu still show the auto-switch state.</li>
+</ul>]]></description>
+            <enclosure
+                url="https://github.com/at0m1cRick/uniKloSwitcher-app/releases/download/v1.6.7/UniKloSwitcher-1.6.7.zip"
+                sparkle:edSignature="e2d6V7N/qGZjTjCKkowNQ0h5Rvs8UhtVflBdWPd75sXMolcnOY4Ab2kDUrCjtq2YgnDEV4MhVAs2bSqdwY1ABQ=="
+                length="1859759"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
