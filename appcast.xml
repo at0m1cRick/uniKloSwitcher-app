@@ -655,5 +655,30 @@
                 length="1882396"
                 type="application/octet-stream" />
         </item>
+        <item>
+            <title>UniKloSwitcher 1.7.1</title>
+            <sparkle:version>1.7.1</sparkle:version>
+            <sparkle:shortVersionString>1.7.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <pubDate>Sat, 14 Nov 2026 14:03:49 +0000</pubDate>
+            <description><![CDATA[<h4>Added</h4>
+<ul>
+<li><b>Diagonal Layout Flag Menu Bar Style</b>: Replaced the classic keyboard icon option in Settings → Appearance with a crisp vector <code>Layout Flag</code> mode (<code>20×14pt</code>, <code>-30°</code> rotated <code>RU</code> / <code>US</code> / <code>UK</code> flags inside a fixed rounded mask, dimmed in color when auto-switching is paused or off, with an accent border flash on switch and red badge alert when permissions are missing).</li>
+</ul>
+<h4>Changed</h4>
+<ul>
+<li><b>Compact Apple HIG Menu Bar Icon</b>: Scaled the default <code>EN / RU</code> layout badge down to <code>20×14pt</code> (<code>9pt</code> semibold) with optical <code>CTLineDraw</code> centering, clean <code>1.0pt</code> Retina-aligned outline when paused, fixed 2-letter width without inner cutout noise, and live light/dark appearance adaptation for tinted warning/accent states.</li>
+</ul>
+<h4>Fixed</h4>
+<ul>
+<li>**Repeated Conversions After <code>Return</code> &amp; Layout Cache Desync**: Typing mistyped short words (such as <code>jr + Return</code> → <code>ок</code>) repeatedly or right after <code>Caps Lock</code> / <code>Fn</code> / focus layout changes now keeps working on the second and subsequent tries — per-keystroke script inference in <code>AutoCorrectionService</code> recovers immediately from stale input-source snapshots while <code>MacLayout</code> reconciles asynchronously after <code>select</code> and modifier transitions.</li>
+<li><b>CI Test Compatibility</b>: Marked the live <code>RU+EN</code> boundary integration check with <code>LayoutRequirement.ruAndEn</code> so CI runners without a Russian layout skip it cleanly while pure whitelist and stale-snapshot recovery tests run everywhere.</li>
+</ul>]]></description>
+            <enclosure
+                url="https://github.com/at0m1cRick/uniKloSwitcher-app/releases/download/v1.7.1/UniKloSwitcher-1.7.1.zip"
+                sparkle:edSignature="fdbnZx9KrrOCQmn2QFH21qptvEy+J/OESGnPyO32BtBm8JsHO7zZcXHoNRF9FW3awhKdJyy8+z2dbHNyEg3wDQ=="
+                length="1885311"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
