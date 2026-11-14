@@ -624,5 +624,36 @@
                 length="1859759"
                 type="application/octet-stream" />
         </item>
+        <item>
+            <title>UniKloSwitcher 1.7.0</title>
+            <sparkle:version>1.7.0</sparkle:version>
+            <sparkle:shortVersionString>1.7.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <pubDate>Sat, 14 Nov 2026 11:58:51 +0000</pubDate>
+            <description><![CDATA[<h4>Added</h4>
+<ul>
+<li><b>Dark-Red Permission Alert in Menu Bar</b>: Shows an adaptive dark-red icon across Layout Badge, classic keyboard SVG, and fallback symbols whenever Accessibility or Input Monitoring permissions are missing.</li>
+<li><b>Learned Auto-Correction Exceptions</b>: Undoing an auto-correction remembers the source word so UniKlo does not fight your vocabulary again (with a reset button in Settings → Auto-Switch).</li>
+<li><b>Instant Short-Word Answers</b>: Unambiguous standalone replies (<code>да</code>, <code>нет</code>, <code>yes</code>, <code>no</code>, <code>как</code>, <code>что</code>, <code>not</code>, <code>and</code>, <code>the</code>, etc.) convert immediately on Space or Return without waiting for a second context word, while ignoring uppercase acronyms.</li>
+<li><b>Auto-Correct Before Return / ⌘Return</b>: Fixes a mistyped word right before sending a chat message (<code>Return</code>, <code>⌘+Return</code>) or inserting a newline (<code>Return</code>, <code>Shift+Return</code>) without carrying Undo or multi-word context across lines (toggleable in Settings → Auto-Switch; switches layout for the next line even when disabled).</li>
+<li><b>Browser Layout Memory Control</b>: Browsers are skipped by default during per-app layout restoration on window activation so per-tab native layouts are not overridden (opt-in toggle available in Settings → General).</li>
+</ul>
+<h4>Changed</h4>
+<ul>
+<li><b>Longer Undo Window &amp; Expanded ShortWords</b>: Increased the Undo window from 1.5 s to 4.5 s and expanded recognized 2–3 letter <code>ShortWords</code> in Russian and English.</li>
+<li><b>Quieter Sparkle Background Updates</b>: Deferred the first scheduled background update check (<code>SULastCheckTime</code> seeded on first launch) and skipped background checks until permissions are active, while manual "Check for Updates…" remains available anytime.</li>
+</ul>
+<h4>Fixed</h4>
+<ul>
+<li>**Native Layout Switching in Browsers &amp; Apps (<code>Ctrl+Space</code>, <code>Fn</code>, <code>Caps Lock</code>)**: Switched per-app layout tracking to <code>MacLayout.inputSourceDidChangeNotification</code>, added manual-switch priority guards so in-flight corrections never revert a concurrent native layout switch, and synced <code>Caps Lock</code> / <code>Fn</code> layout transitions.</li>
+<li><b>Browser Manual Conversion &amp; Omnibox Inline Autocomplete</b>: Manual conversion now captures the active typing buffer before line-grab fallbacks and handles empty-string <code>kAXSelectedTextAttribute</code> responses in Chromium/Electron; auto-correction safely clears highlighted inline Omnibox suggestions without accepting them, passes target virtual <code>keyCode</code>s on retype, and remaps <code>kVK_ANSI_Slash</code> boundaries (<code>ghbdtn/</code> → <code>привет.</code> on Russian-PC).</li>
+<li><b>Permission Relaunch Safety</b>: Eliminated redundant permission polling and added a single-shot relaunch guard when Accessibility and Input Monitoring permissions arrive mid-run.</li>
+</ul>]]></description>
+            <enclosure
+                url="https://github.com/at0m1cRick/uniKloSwitcher-app/releases/download/v1.7.0/UniKloSwitcher-1.7.0.zip"
+                sparkle:edSignature="PPE5F72vFW1/Pf8XTnfSP3Yv1roPXXmqS8H9GxeQqJW23ggSxu4rMqBEogRdvyBtrhoHP0zXNtGu0aDSOufJCw=="
+                length="1882396"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
