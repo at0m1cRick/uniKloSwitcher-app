@@ -696,5 +696,21 @@
                 length="1885448"
                 type="application/octet-stream" />
         </item>
+        <item>
+            <title>UniKloSwitcher 1.7.3</title>
+            <sparkle:version>1.7.3</sparkle:version>
+            <sparkle:shortVersionString>1.7.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <pubDate>Sat, 14 Nov 2026 15:14:41 +0000</pubDate>
+            <description><![CDATA[<h4>Added</h4>
+<ul>
+<li><b>Color Badge (EN / RU) Menu Bar Style</b>: Added a third icon option in Settings → Appearance with crisp <code>20×14pt</code> flag-inspired gradients (blue-to-red for <code>RU</code>, deep indigo-to-blue for <code>EN</code>), white <code>9pt</code> semibold/bold glyphs, dimmed appearance when paused, and a bright flash border on switches.</li>
+</ul>]]></description>
+            <enclosure
+                url="https://github.com/at0m1cRick/uniKloSwitcher-app/releases/download/v1.7.3/UniKloSwitcher-1.7.3.zip"
+                sparkle:edSignature="ditjRqu7u1Pu10R3dfnHwfTir6KUQF37gMJFCl44pynmDqtSKwU5q4Rore8tYPbFgLF1gCPjNq+3iakmZ7jMCA=="
+                length="1888063"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
