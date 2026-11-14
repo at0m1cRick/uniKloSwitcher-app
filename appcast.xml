@@ -680,5 +680,21 @@
                 length="1885311"
                 type="application/octet-stream" />
         </item>
+        <item>
+            <title>UniKloSwitcher 1.7.2</title>
+            <sparkle:version>1.7.2</sparkle:version>
+            <sparkle:shortVersionString>1.7.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <pubDate>Sat, 14 Nov 2026 14:30:52 +0000</pubDate>
+            <description><![CDATA[<h4>Fixed</h4>
+<ul>
+<li>**Partial Word Capture on Cyrillic Letters Mapping to Latin Punctuation (<code>ж</code>, <code>б</code>, <code>ю</code>, <code>х</code>, <code>ъ</code>) &amp; Caret Moves**: <code>WordBuffer</code> no longer splits or drops prefixes of Russian words when <code>ж</code>/<code>б</code>/<code>ю</code>/<code>х</code>/<code>ъ</code> appear at the start or mid-word (e.g. <code>менеджеру</code> stays whole instead of splitting off <code>еру</code> → <code>the</code>, while preserving <code>future.</code> / <code>about,</code> end-of-word punctuation hints), and <code>AutoCorrectionService</code> resets the buffer explicitly on arrow/Home/End/PageUp/PageDown/ForwardDelete/Escape navigation keys.</li>
+</ul>]]></description>
+            <enclosure
+                url="https://github.com/at0m1cRick/uniKloSwitcher-app/releases/download/v1.7.2/UniKloSwitcher-1.7.2.zip"
+                sparkle:edSignature="TBEOJ9tvEe3jiUrYB/JKrZ2THJDaVKW4PIdiButQlQnOtVmdstU7HL/8IXyxDo44Po+trkLKfEqbeNNYj9lwBQ=="
+                length="1885448"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
