@@ -728,5 +728,21 @@
                 length="1894896"
                 type="application/octet-stream" />
         </item>
+        <item>
+            <title>UniKloSwitcher 1.7.5</title>
+            <sparkle:version>1.7.5</sparkle:version>
+            <sparkle:shortVersionString>1.7.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <pubDate>Sun, 15 Nov 2026 10:58:08 +0000</pubDate>
+            <description><![CDATA[<h4>Changed</h4>
+<ul>
+<li>**Standard-Height Menu Bar Icons (<code>23×16pt</code>)**: Upscaled all three menu bar icon styles (<code>Layout Badge</code>, <code>Color Badge</code>, and <code>Layout Flag</code>) from <code>20×14pt</code> (<code>9pt</code> font) to <code>23×16pt</code> (<code>10.5pt</code> font, <code>3.5pt</code> corner radius) on the <code>18pt</code> canvas so they match the visual height and weight of neighboring macOS menu bar icons.</li>
+</ul>]]></description>
+            <enclosure
+                url="https://github.com/at0m1cRick/uniKloSwitcher-app/releases/download/v1.7.5/UniKloSwitcher-1.7.5.zip"
+                sparkle:edSignature="glvUBG3uW89wQZkw106QFa63MZWH4WRRKEdjmzeDXewnWHInHeCXu7imE3kCSHNgGaUYa3M+39kvNkYULridAw=="
+                length="1894806"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
