@@ -744,5 +744,26 @@
                 length="1894806"
                 type="application/octet-stream" />
         </item>
+        <item>
+            <title>UniKloSwitcher 1.7.6</title>
+            <sparkle:version>1.7.6</sparkle:version>
+            <sparkle:shortVersionString>1.7.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <pubDate>Sun, 15 Nov 2026 11:52:55 +0000</pubDate>
+            <description><![CDATA[<h4>Changed</h4>
+<ul>
+<li>**High-Contrast Color Badge (<code>20×14pt</code>)**: Returned all three menu bar icon styles (<code>Layout Badge</code>, <code>Color Badge</code>, and <code>Layout Flag</code>) to compact <code>20×14pt</code> proportions (<code>9pt</code> font, <code>3pt</code> corner radius) and updated the <code>Color Badge</code> palette to Apple System Vivid gradients (<code>#FF3B30 → #C81E1E</code> for <code>RU</code>, <code>#0A84FF → #0055D4</code> for <code>EN</code>) with a <code>0.6pt</code> inner highlight rim when active for crisp contrast across light, dark, and translucent menu bars.</li>
+</ul>
+<h4>Added</h4>
+<ul>
+<li><b>Smart Abbreviation &amp; Technical Token Protection</b>: Added a 4-layer <code>AbbreviationGuard</code> protecting <code>2–5</code> uppercase acronyms typed with <code>Shift</code> (while still auto-correcting words typed with an accidental <code>Caps Lock</code>, such as <code>GHBDTN</code> → <code>ПРИВЕТ</code>), <code>CamelCase</code> identifiers (<code>iOS</code>, <code>macOS</code>, <code>GitHub</code>) without blocking stuck-Shift typos (<code>GHbdtn</code> → <code>Привет</code>), collision-audited lowercased abbreviations (<code>json</code>, <code>html</code>, <code>yaml</code>, <code>grpc</code>, <code>sql</code>, <code>ssh</code>, <code>ндфл</code>, <code>снилс</code>), technical prefixes/extensions (<code>.env</code>, <code>--yaml</code>, <code>config.toml</code>, <code>application/tls</code>), and case-aware <code>ALL CAPS</code> Undo exceptions.</li>
+<li><b>Menu Bar Preview Template</b>: Saved interactive operator preview template at <code>docs/menubar-badge-preview.html</code> for comparing icon sizes, scales, and color palettes across Light/Dark menu bars and Active/Paused/Flash states.</li>
+</ul>]]></description>
+            <enclosure
+                url="https://github.com/at0m1cRick/uniKloSwitcher-app/releases/download/v1.7.6/UniKloSwitcher-1.7.6.zip"
+                sparkle:edSignature="YBwt+gWQSmPad7aJkfGRbtJEwqrTQr7CGTuBPnEkoXhpL9VqdHdeYOPDGqIPmVxDZ5XRY4QXrl5P02HmCTMPBg=="
+                length="1901377"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
