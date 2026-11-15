@@ -765,5 +765,25 @@
                 length="1901377"
                 type="application/octet-stream" />
         </item>
+        <item>
+            <title>UniKloSwitcher 1.7.7</title>
+            <sparkle:version>1.7.7</sparkle:version>
+            <sparkle:shortVersionString>1.7.7</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <pubDate>Sun, 15 Nov 2026 13:09:52 +0000</pubDate>
+            <description><![CDATA[<h4>Changed</h4>
+<ul>
+<li>**High-Contrast Color Badge (<code>22×16pt</code>)**: Kept <code>Layout Badge</code> and <code>Layout Flag</code> at compact <code>20×14pt</code> proportions while sizing <code>Color Badge</code> to <code>22×16pt</code> (<code>10pt</code> Bold, <code>3.75pt</code> corner radius) to match the <code>16pt</code> height of native macOS menu bar pills, using Apple System Vivid gradients (<code>#FF3B30 → #C81E1E</code> for <code>RU</code>, <code>#0A84FF → #0055D4</code> for <code>EN</code>) with crisp borderless edges when active (borders reserved for switch flash and pause states).</li>
+</ul>
+<h4>Fixed</h4>
+<ul>
+<li>**Double-Shift Undo Clean Replacement (<code>неаytf</code> / <code>нytw</code>)**: Replaced fragile unverified <code>Shift+Left</code> selection sequences during Undo with atomic Accessibility suffix replacement (<code>axReplaceSuffixBeforeCaret</code>) and paced <code>Backspace</code> + <code>typeUnicode</code> fallback for non-AX editors, preventing partial/zero-selection glitches that glued reverted text next to the original word.</li>
+</ul>]]></description>
+            <enclosure
+                url="https://github.com/at0m1cRick/uniKloSwitcher-app/releases/download/v1.7.7/UniKloSwitcher-1.7.7.zip"
+                sparkle:edSignature="cabhd/KPkQ/DHwdiKFypwwvqfk9fODLkQGcXuUfo2PyAZWBdn8h7izPa/Uk1IiXvVzoO0JcmYMKiTLKDc3z9Cw=="
+                length="1903740"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
