@@ -712,5 +712,21 @@
                 length="1888063"
                 type="application/octet-stream" />
         </item>
+        <item>
+            <title>UniKloSwitcher 1.7.4</title>
+            <sparkle:version>1.7.4</sparkle:version>
+            <sparkle:shortVersionString>1.7.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <pubDate>Sun, 15 Nov 2026 10:27:35 +0000</pubDate>
+            <description><![CDATA[<h4>Fixed</h4>
+<ul>
+<li><b>Punctuation Translation on Auto-Switch</b>: Auto-correction now translates both trailing punctuation (e.g., <code>ghbdtn&amp;</code> → <code>привет?</code>, <code>ghbdtn^</code> → <code>привет:</code>, <code>руддщ,</code> → <code>hello?</code>) and clean word-leading punctuation (<code>@ghbdtn@</code> → <code>"привет"</code>) using the physical <code>(keyCode, Shift)</code> mapping of the user's active target layout, while preserving <code>Option</code>-modified symbols, manual mid-word layout switches, and leading <code>#</code> hashtags as exceptions.</li>
+</ul>]]></description>
+            <enclosure
+                url="https://github.com/at0m1cRick/uniKloSwitcher-app/releases/download/v1.7.4/UniKloSwitcher-1.7.4.zip"
+                sparkle:edSignature="O5NUuWDd8zNDZmtc1O8QANIJfnH8leZqFxPhc35v51MKRwKhjxLIOAhLzzhApZ25qj1gOPWm2If3nRMsWOCWAg=="
+                length="1894896"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
