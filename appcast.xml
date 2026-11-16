@@ -785,5 +785,25 @@
                 length="1903740"
                 type="application/octet-stream" />
         </item>
+        <item>
+            <title>UniKloSwitcher 1.7.8</title>
+            <sparkle:version>1.7.8</sparkle:version>
+            <sparkle:shortVersionString>1.7.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <pubDate>Mon, 16 Nov 2026 00:51:15 +0000</pubDate>
+            <description><![CDATA[<h4>Added</h4>
+<ul>
+<li>**Mistyped URL Schemes, Domains, Dotfiles &amp; RU→EN Technical Dictionary (<code>реезыЖ..</code> → <code>https://</code>)**: Added immediate mid-typing auto-conversion for Cyrillic-typed URI prefixes (<code>https://</code>, <code>http://</code>, <code>ssh://</code>, <code>ftp://</code>, <code>ws://</code>, etc. on both Russian-PC <code>Ж..</code> and Apple Russian <code>Ж/</code>), <code>www.</code> (<code>цццю</code>), and colon prefixes (<code>localhost:</code> / <code>mailto:</code>), plus collision-audited RU→EN support for standalone IT/CLI/protocol terms (<code>yaml</code>, <code>html</code>, <code>grpc</code>, <code>json</code>, <code>sudo</code>, <code>curl</code>, <code>docker</code>, <code>kubectl</code>, etc.), dotted domains/dotfiles (<code>google.com</code>, <code>ya.ru</code>, <code>.env</code>, <code>.gitignore</code>), and <code>--flag</code> CLI arguments (<code>--json</code>, <code>--help</code>).</li>
+</ul>
+<h4>Fixed</h4>
+<ul>
+<li>**Underscore &amp; <code>snake_case</code> Auto-Conversion (<code>ца_Ыгиы</code> / <code>ца_Subs</code> → <code>wf_Subs</code>)**: Folded internal single <code>_</code> characters inside <code>WordBuffer</code> and split underscore/dot segments in <code>TrigramModel.score</code> and <code>autoDecideMixed</code>, preventing <code>.restarted</code> from discarding the left half of <code>snake_case</code> identifiers while keeping EN-typed <code>snake_case</code> (<code>user_id</code>, <code>my_var</code>, <code>wf_Subs</code>) protected.</li>
+</ul>]]></description>
+            <enclosure
+                url="https://github.com/at0m1cRick/uniKloSwitcher-app/releases/download/v1.7.8/UniKloSwitcher-1.7.8.zip"
+                sparkle:edSignature="R/PgyouvbNr6/uUGdDqRA/6Dn6iDuznCMNNXgpVmeHi+tpnq4juVW3u8f2HMMEoGYz6w+rM3bryg7whYwZlPBQ=="
+                length="1913392"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
