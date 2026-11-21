@@ -805,5 +805,23 @@
                 length="1913392"
                 type="application/octet-stream" />
         </item>
+        <item>
+            <title>UniKloSwitcher 1.7.9</title>
+            <sparkle:version>1.7.9</sparkle:version>
+            <sparkle:shortVersionString>1.7.9</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <pubDate>Sat, 21 Nov 2026 20:46:30 +0000</pubDate>
+            <description><![CDATA[<h4>Fixed</h4>
+<ul>
+<li><b>Status Bar KVO 100% CPU Loop &amp; Energy Impact</b>: Ignored redundant <code>effectiveAppearance</code> KVO callbacks when the theme (<code>dark</code>/<code>light</code>) has not changed and skipped no-op <code>NSStatusBarButton.image</code> / <code>needsDisplay</code> updates, stopping an infinite <code>_updateReplicants</code> redraw loop on macOS (<code>NSStatusItem</code> / <code>MenuBarAgent</code>).</li>
+<li><b>Pre-Rasterized Menu Bar Icons</b>: Baked <code>1×</code> and <code>2×</code> Retina <code>NSBitmapImageRep</code> bitmaps in sRGB instead of lazy <code>NSCustomImageRep</code> drawing closures so replicant snapshots blit directly without re-running <code>CGGradient</code>, <code>ColorSync</code>, or <code>CoreText</code>.</li>
+<li><b>Zero-Wakeup Pause Expiration</b>: Replaced the permanent <code>30s</code> <code>pauseTicker</code> polling timer with a single one-shot timer scheduled strictly until <code>pauseUntil</code> (plus <code>NSWorkspace.didWakeNotification</code>).</li>
+</ul>]]></description>
+            <enclosure
+                url="https://github.com/at0m1cRick/uniKloSwitcher-app/releases/download/v1.7.9/UniKloSwitcher-1.7.9.zip"
+                sparkle:edSignature="R1Gcf5GPeCsmYdcQloTVNyzznDGYesn1X6K2nGQC512Z8Zf0EIBkOtx0cIKerjE5W2N8Lz4MP542ICRhm4EiAQ=="
+                length="1917116"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
