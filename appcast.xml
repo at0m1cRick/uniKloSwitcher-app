@@ -823,5 +823,21 @@
                 length="1917116"
                 type="application/octet-stream" />
         </item>
+        <item>
+            <title>UniKloSwitcher 1.7.10</title>
+            <sparkle:version>1.7.10</sparkle:version>
+            <sparkle:shortVersionString>1.7.10</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <pubDate>Sat, 21 Nov 2026 20:57:27 +0000</pubDate>
+            <description><![CDATA[<h4>Changed</h4>
+<ul>
+<li>**Release Versioning Policy (<code>AGENTS.md</code>)**: Documented mandatory version bumping in <code>CHANGELOG.md</code> and <code>VERSION</code> synchronization via <code>scripts/get_version.sh</code> before every build/release so Sparkle updates trigger reliably.</li>
+</ul>]]></description>
+            <enclosure
+                url="https://github.com/at0m1cRick/uniKloSwitcher-app/releases/download/v1.7.10/UniKloSwitcher-1.7.10.zip"
+                sparkle:edSignature="jry1ZI1yVfOLACFDCpyXb85r1aaCW4lRQedIzQJjHgH834FvGAWtX0bfhs2gHdGJThBj6NWvQzpNJbOpn1VbCQ=="
+                length="1917126"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
