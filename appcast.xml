@@ -839,5 +839,25 @@
                 length="1917126"
                 type="application/octet-stream" />
         </item>
+        <item>
+            <title>UniKloSwitcher 1.7.11</title>
+            <sparkle:version>1.7.11</sparkle:version>
+            <sparkle:shortVersionString>1.7.11</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <pubDate>Sun, 22 Nov 2026 09:28:45 +0000</pubDate>
+            <description><![CDATA[<h4>Added</h4>
+<ul>
+<li>**Gray-Zone Impossible-Trigram Bridge &amp; Spell-Checker Tie-Breaker (<code>гдекф</code> → <code>ultra</code>, <code>цруку</code> → <code>where</code>)**: Added a pure-trigram bridge (Path 3 in <code>Trigram.swift</code>) for 4+ letter junk containing impossible source trigrams (like <code>екф</code> in <code>гдекф</code>) and a cached non-blocking <code>NSSpellChecker</code> tie-breaker (<code>SpellCheckerResolver</code>) for gray-zone 4+ letter words with misleading substrings (<code>цруку</code> → <code>where</code>, <code>удумут</code> → <code>eleven</code>, <code>кудумфте</code> → <code>relevant</code>, <code>путвук</code> → <code>gender</code>, <code>сруа</code> → <code>chef</code>), while keeping real native words (<code>руку</code> → <code>here</code>, <code>где</code>, <code>гдето</code>) untouched.</li>
+</ul>
+<h4>Changed</h4>
+<ul>
+<li>**Release Versioning Policy (<code>AGENTS.md</code>)**: Documented mandatory version bumping in <code>CHANGELOG.md</code> and <code>VERSION</code> synchronization via <code>scripts/get_version.sh</code> before every build/release so Sparkle updates trigger reliably.</li>
+</ul>]]></description>
+            <enclosure
+                url="https://github.com/at0m1cRick/uniKloSwitcher-app/releases/download/v1.7.11/UniKloSwitcher-1.7.11.zip"
+                sparkle:edSignature="cK+hq6/zPvMVkmL4hTWNBKs02bX0J/tp96hO9es8/5WRkOpF2JPtDIQxBoPtb/okCAQcoE5VQCsAkDqeVRkBDw=="
+                length="1925925"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
